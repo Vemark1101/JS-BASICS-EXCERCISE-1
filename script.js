@@ -1,9 +1,9 @@
-const inpNum1 = document.querySelector("#num1");
-const inpNum2 = document.querySelector("#num2");
-const txtSum = document.querySelector("#sum");
-const txtDif = document.querySelector("#dif");
-const txtPro = document.querySelector("#pro");
-const txtQuo = document.querySelector("#quo");
+const inpNum1 = document.getElementById("num1");
+const inpNum2 = document.getElementById("num2");
+const txtSum = document.getElementById("sum");
+const txtDif = document.getElementById("dif");
+const txtPro = document.getElementById("pro");
+const txtQuo = document.getElementById("quo");
 
 let sum = 0;
 let dif = 0;
@@ -11,13 +11,13 @@ let pro = 0;
 let quo = 0;
 
 function calculate(){
-    
+
     if(!(inpNum1.value === "" || inpNum2.value === "")){
 
-    sum = parseFloat(inpNum1.value) + parseFloat(inpNum2.value);
-    dif = parseFloat(inpNum1.value) - parseFloat(inpNum2.value);
-    pro = parseFloat(inpNum1.value) * parseFloat(inpNum2.value);
-    quo = parseFloat(inpNum1.value) / parseFloat(inpNum2.value);
+    sum = parseInt(inpNum1.value) + parseInt(inpNum2.value);
+    dif = parseInt(inpNum1.value) - parseInt(inpNum2.value);
+    pro = parseInt(inpNum1.value) * parseInt(inpNum2.value);
+    quo = parseInt(inpNum1.value) / parseInt(inpNum2.value);
 
     txtSum.innerHTML = sum;
     txtDif.innerHTML = dif;
